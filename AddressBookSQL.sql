@@ -24,4 +24,16 @@ set Address = 'Bandra'
 where First_Name ='Sachin';
 select * from AddBook
 
+--Insert one more data
+Insert into AddBook(First_Name,Last_Name,Address,City,State,Zip,Phone_Number,Email)
+Values('Rahul','Dravid','Powai','Mumbai','Maharashtra','411612','9163126781','rahul@abc.com');
+select * from AddBook
+
+--Delete data for Rahul
+delete from AddBook
+where First_Name = 'Rahul'
+select * from AddBook
+
+
+
 
