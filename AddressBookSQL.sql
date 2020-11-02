@@ -18,4 +18,10 @@ Insert into AddBook(First_Name,Last_Name,Address,City,State,Zip,Phone_Number,Ema
 Values('Sachin','Tendulkar','Bandra East','Mumbai','Maharashtra','411610','9163121771','sachin@abc.com');
 select * from AddBook
 
+--Edit Data using first name
+update AddBook
+set Address = 'Bandra'
+where First_Name ='Sachin';
+select * from AddBook
+
 
