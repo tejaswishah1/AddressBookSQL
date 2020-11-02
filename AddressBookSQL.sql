@@ -43,7 +43,9 @@ select * from AddBook
 select * from AddBook
 where City ='Kolkata'
 
-
-
+--Count
+SELECT COUNT('City')
+FROM AddBook
+WHERE City='Mumbai';
 
 
