@@ -48,4 +48,8 @@ SELECT COUNT('City')
 FROM AddBook
 WHERE City='Mumbai';
 
+--Sort by city name
+select * from AddBook
+order by City
+
 
