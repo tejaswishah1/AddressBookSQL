@@ -34,6 +34,16 @@ delete from AddBook
 where First_Name = 'Rahul'
 select * from AddBook
 
+--Insert one more data
+Insert into AddBook(First_Name,Last_Name,Address,City,State,Zip,Phone_Number,Email)
+Values('Sourav','Ganguly','Behala','Kolkata','West Bengal','711104','9164136782','sourav@abc.com');
+select * from AddBook
+
+--Retrieve Data
+select * from AddBook
+where City ='Kolkata'
+
+
 
 
 
