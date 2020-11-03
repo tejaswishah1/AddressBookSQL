@@ -52,4 +52,31 @@ WHERE City='Mumbai';
 select * from AddBook
 order by City
 
+--Entries sorted Alphabetically
+select * from AddBook
+order by First_Name, Last_Name;
+
+--Add New Column
+alter table AddBook
+add Address_book_name varchar(15);
+alter table AddBook
+add Contact_Type varchar(15);
+select * from AddBook
+
+update AddBook
+set Address_book_name='General', Contact_Type='Friend'
+where First_Name ='Sachin';
+
+update AddBook
+set Address_book_name='General', Contact_Type='Family'
+where First_Name ='Sourav';
+
+--Count by type:
+select Contact_Type, COUNT(Contact_Type) as Count_is
+from AddBook
+group by Contact_Type
+
+
+
+
 
